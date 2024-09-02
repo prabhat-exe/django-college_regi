@@ -1,0 +1,29 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block title %}
+<title>
+change password
+</title>
+{% endblock title %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock style %}
+
+{% block connect %}
+<main>
+    <form action="#" method="POST"> <!-- Update action with your server endpoint -->
+       {% csrf_token %}
+        <label for="password">New Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="cpassword">confirm password:</label>
+        <input type="cpassword" id="cpassword" name="cpassword" required>
+        <a href="{% url 'login' %}">        
+        <button type="submit">Login</button>
+    </a>    
+    </form>
+</main>
+{% endblock connect %}

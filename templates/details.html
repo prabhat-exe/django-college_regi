@@ -1,0 +1,45 @@
+{% extends "master.html" %}
+{% load static %}
+{% block title %}
+<title>
+DETAILS
+</title>
+{% endblock title %}
+
+ {% block style %}
+<link rel="stylesheet" href="{% static 'css/details.css' %}">
+ 
+ {% endblock style %}
+
+{% block connect %}
+
+<div class="details-container">
+  <div class="detail-item">
+    <span class="label">Name:</span> {{ student.name }}
+  </div>
+  <div class="detail-item">
+    <span class="label">Father's Name:</span> {{ student.fname }}
+  </div>
+  <div class="detail-item">
+    <span class="label">Email:</span> {{ student.email }}
+  </div>
+  <div class="detail-item">
+    <span class="label">Date of Admission:</span> {{ student.dt }}
+  </div>
+</div>
+
+{% endblock connect %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

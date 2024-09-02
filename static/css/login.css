@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-left, .nav-right a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-right {
+    display: flex;
+}
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+form {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+form label {
+    margin-top: 10px;
+}
+form input[type="email"],
+form input[type="password"] 
+form input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+form button:hover {
+    opacity: 0.8;
+}
+#signup{
+    color: blue;
+}
+
+#Fname{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}

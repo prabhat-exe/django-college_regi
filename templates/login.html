@@ -1,0 +1,29 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block title %}
+<title>
+LOGIN
+</title>
+{% endblock title %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock style %}
+
+{% block connect %}
+<main>
+    <form action="#" method="POST"> <!-- Update action with your server endpoint -->
+       {% csrf_token %}
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Login</button>
+        Don't have an account? <a href="{% url 'signup' %}" id='signup'>Sign up</a>
+    </form>
+</main>
+{% endblock connect %}
